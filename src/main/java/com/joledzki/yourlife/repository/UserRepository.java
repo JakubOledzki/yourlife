@@ -2,6 +2,8 @@ package com.joledzki.yourlife.repository;
 
 import com.joledzki.yourlife.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface UserRepository extends JpaRepository<Long, User> {
+@Repository
+public interface UserRepository extends JpaRepository<User, Long> {
 }
